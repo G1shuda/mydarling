@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Philosopher&display=swap);
+
+.body {
+  font-family: Philosopher;
+  font-size:larger;
+  font-weight: 600;
+  background: linear-gradient(0deg, #ffffff 1%, #9ad3fe 16%, #9ad3fe 24%, #ffffff 49%, #f8a9fe 85%, #ffffff 99%);
+}
+
+
+.nav-link {
+  color: pink;
+}
+
+.navbar-nav .nav-link.active {
+  color: palevioletred
+}
+
+.navbar-brand img {
+  width: 45px;
+}
+
+.card-body {
+  color:rgb(78, 78, 78);
+}
+
+
+body{
+  background: rgba(218,218,218,1)
+}
+
+a{
+  color: #111
+}
+
+.photo{
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.photo img{
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(120%);
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+  display: block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+
+.photo:hover img{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+}
+
+.photo .glow-wrap{
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  margin-top: -10px;
+}
+
+.photo .glow{
+  display: block;
+  position:relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(70deg) translate(-450%, 0);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow{
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap{
+  margin-top: 0;
+}
+
+h1{
+  position: absolute;
+  z-index: 1;
+  transform: translate(-25%, -65%);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  line-height: 1.2;
+}
+
+
+/* Ends */
+
+#author{
+  font-family: Helvetica, Arial;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #888;
+}
+
+#author:hover{
+  color: #111;
+}
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper1 {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 42ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@import "compass/css3";
+
+@include keyframes(bounce) {
+	0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+	40% {
+    @include transform(translateY(-30px));
+  }
+	60% {
+    @include transform(translateY(-15px));
+  }
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #212529;
+}
+
+/* Let's style the wrapper in such away that, 
+it should always be at the center of the browser */
+.wrapper {
+  position:relative;
+  top: 42px;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+}
+
+/* Style the Un-order list by setting its list-style to none */
+.wrapper ul {
+  list-style: none;
+}
+
+/* Style the list items inside the UL list, by setting its width, height and line-height 
+  and float them to left and set its border and border-radius.
+ */
+.wrapper ul li {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #D8E2DC;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+/* Style the icons by setting its color and margin-top value to 20px 
+to align it properly */
+.wrapper ul li .fa {
+  color: #D8E2DC;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+
+.wrapper ul li:hover.telegram {
+  border: 5px solid #2a8be0;
+  box-shadow: 0 0 15px #2a8be0;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-telegram {
+  color: #1f91f5;
+  text-shadow: 0 0 15px #1f91f5;
+  transition: all 0.5s ease;
+}
+
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

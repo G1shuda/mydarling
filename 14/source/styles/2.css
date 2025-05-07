@@ -1,0 +1,40 @@
+body,html{height:100%;margin:0;padding:0;background:#E3DFD2}
+svg{
+  background:url('https://sun9-6.userapi.com/impg/3-Y8jgFffaGPPWd7xxz_2H3RF3LjbQBwNo8uJA/a3G2B-YZtUM.jpg?size=960x1280&quality=95&sign=5bfde834fef7d7a8a3ea2a0caf4648f0&type=album');
+  background-size:cover;
+  width:80vmin; height: auto;;
+  display:block;
+  margin:30vmin auto;
+}
+text{
+  font-size:10px;
+  transition:font-size .4s ease-out;
+  font-weight:900;
+  font-family:arial;
+}
+svg:hover text{
+  transition:font-size .4s ease-in;
+  font-size: 300px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Philosopher&display=swap);
+
+.body {
+  font-family: Philosopher;
+  font-size:larger;
+  font-weight: 600;
+  background: linear-gradient(0deg, #ffffff 1%, #9ad3fe 16%, #9ad3fe 24%, #ffffff 49%, #f8a9fe 85%, #ffffff 99%);
+}
+
+
+.nav-link {
+  color: pink;
+}
+
+.navbar-nav .nav-link.active {
+  color: palevioletred
+}
+
+.navbar-brand img {
+  width: 45px;
+}
